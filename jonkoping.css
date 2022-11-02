@@ -1,16 +1,15 @@
 * {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  background-color: #f3eced;
-  color: #c698a5;
 }
 .container {
   display: grid;
   grid-template-columns: 300px 1fr 1fr 1fr 20px;
-  grid-template-rows: 83px 1fr 83px;
+  grid-template-rows: 83px 1fr;
   grid-column-gap: 35px;
   height: 100vh;
-  grid-template-areas: "header header header header header" "menu con1 con2 con3 side" "footer footer footer footer footer";
+  grid-template-areas: "header header header header header" "menu con1 con2 con3 side";
+  background-color: #f3eced;
 }
 .side {
   grid-area: side;
@@ -19,9 +18,12 @@
 .menu {
   background-color: #cfa5b1;
   grid-area: menu;
+  color: #f3eced;
   padding: 30px;
 }
-
+a {
+  color: #7b90ac;
+}
 header {
   background-color: #cfa5b1;
   font-size: 4em;
@@ -34,19 +36,27 @@ h1 {
   color: #7b90ac;
   font-size: 30;
 }
+h2 {
+  color: #7b90ac;
+}
+
 .con1 {
   grid-area: con1;
+  background-color: #f3eced;
+  color: #c698a5;
 }
 
 .con2 {
   grid-area: con2;
+  background-color: #f3eced;
+  color: #c698a5;
 }
 .con3 {
   grid-area: con3;
+  background-color: #f3eced;
+  color: #c698a5;
 }
-.footer {
-  grid-area: footer;
-}
+
 h3 {
   font-size: small;
 }

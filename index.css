@@ -5,8 +5,8 @@
 .container {
   display: grid;
   grid-template-columns: 300px 1fr 300px;
-  grid-template-rows: 83px 1fr 83px;
-  grid-template-areas: "header header header" "menu con1 conside" "footer footer footer";
+  grid-template-rows: 83px 1fr;
+  grid-template-areas: "header header header" "menu con1 conside";
 }
 .con1 {
   grid-area: con1;
@@ -22,17 +22,14 @@
   grid-area: menu;
   color: #f3eced;
   padding: 30px;
+
   /*HOW DO I GIVE THE LINKS DIFFERENT NAMES? <A1?*/
 }
+
 a {
   color: #7b90ac;
 }
-a:hover {
-  border: #7b90ac;
-}
-a1 {
-  color: #f3eced;
-}
+
 header {
   background-color: #cfa5b1;
   font-size: 4em;
@@ -40,17 +37,16 @@ header {
   grid-area: header;
   color: #f3eced;
 }
-footer {
-  background-color: #cfa5b1;
-  grid-area: footer;
-}
+
 /* The following 1 line (line 10) was copied from the lesson with Garret, and how to do this comment was searched from google.com */
 li:hover {
   font-weight: bold;
-  color: #c698a5;
+
   font-size: 2, 5rem;
 }
-
+ul.menu:hover {
+  font-weight: bold;
+}
 h1 {
   color: #7b90ac;
   text-align: center;
@@ -63,15 +59,14 @@ h2 {
 h3 {
   color: #7b90ac;
 }
-h4 {
-  color: #7b90ac;
-}
+
 .introduction {
   padding-left: 90px;
 }
 .interests {
   float: left;
   padding-left: 70px;
+  min-width: 170px;
 }
 .food {
   float: left;
