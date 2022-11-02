@@ -7,7 +7,7 @@
   grid-template-columns: 300px 1fr 1fr 1fr 20px;
   grid-template-rows: 83px 1fr;
   grid-column-gap: 35px;
-  height: 100vh;
+
   grid-template-areas: "header header header header header" "menu con1 con2 con3 side";
   background-color: #f3eced;
 }
