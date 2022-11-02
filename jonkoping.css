@@ -1,0 +1,55 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #f3eced;
+  color: #c698a5;
+}
+.container {
+  display: grid;
+  grid-template-columns: 300px 1fr 1fr 1fr 20px;
+  grid-template-rows: 83px 1fr 83px;
+  grid-column-gap: 35px;
+  height: 100vh;
+  grid-template-areas: "header header header header header" "menu con1 con2 con3 side" "footer footer footer footer footer";
+}
+.side {
+  grid-area: side;
+  background-color: #cfa5b1;
+}
+.menu {
+  background-color: #cfa5b1;
+  grid-area: menu;
+  padding: 30px;
+}
+
+header {
+  background-color: #cfa5b1;
+  font-size: 4em;
+  text-align: center;
+  grid-area: header;
+  color: #f3eced;
+}
+h1 {
+  text-align: center;
+  color: #7b90ac;
+  font-size: 30;
+}
+.con1 {
+  grid-area: con1;
+}
+
+.con2 {
+  grid-area: con2;
+}
+.con3 {
+  grid-area: con3;
+}
+.footer {
+  grid-area: footer;
+}
+h3 {
+  font-size: small;
+}
+p1 {
+  font-size: smaller;
+}
