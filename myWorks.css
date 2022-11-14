@@ -1,0 +1,60 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.container {
+  display: grid;
+  grid-template-columns: 300px 1fr 1fr 1fr 20px;
+  grid-template-rows: 83px 1fr 1fr;
+  grid-template-areas: "header header header header header" "menu logo stylization figma side" " menu animalDrawing coffeTableBook con6 side";
+  background-color: #f3eced;
+  grid-column-gap: 10px;
+}
+.menu {
+  background-color: #cfa5b1;
+  grid-area: menu;
+  color: #f3eced;
+  padding: 30px;
+}
+header {
+  background-color: #cfa5b1;
+  font-size: 4em;
+  text-align: center;
+  grid-area: header;
+  color: #f3eced;
+}
+.logo {
+  grid-area: logo;
+}
+.stylization {
+  grid-area: stylization;
+}
+.figma {
+  grid-area: figma;
+}
+.animalDrawing {
+  grid-area: animalDrawing;
+}
+.coffeTableBook {
+  grid-area: coffeTableBook;
+  max-width: fit-content;
+}
+.side {
+  grid-area: side;
+  background-color: #cfa5b1;
+}
+img {
+  max-width: 300px;
+}
+
+h2 {
+  color: #7b90ac;
+}
+h3 {
+  color: #7b90ac;
+  font-size: 25px;
+  text-align: center;
+}
+a {
+  color: #7b90ac;
+}
