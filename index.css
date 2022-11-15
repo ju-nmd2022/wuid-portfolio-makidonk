@@ -22,10 +22,16 @@
   grid-area: menu;
   color: #f3eced;
   padding: 30px;
-
-  /*HOW DO I GIVE THE LINKS DIFFERENT NAMES? <A1?*/
 }
-
+.menulist {
+  list-style: none;
+  font-size: 25px;
+}
+.listmyworks {
+  list-style: none;
+  font-size: 15px;
+  line-height: 30px;
+}
 a {
   color: #7b90ac;
 }
@@ -37,16 +43,23 @@ header {
   grid-area: header;
   color: #f3eced;
 }
-
+li {
+  list-style: none;
+}
+ul.info {
+  margin-top: 0px; /* what am i doing wrong?!!!!!!!!!!!!!!*/
+}
 /* The following 1 line (line 10) was copied from the lesson with Garret, and how to do this comment was searched from google.com */
 li:hover {
   font-weight: bold;
 
   font-size: 2, 5rem;
 }
-ul.menu:hover {
-  font-weight: bold;
+/*the next 3 lines are inspired by https://stackoverflow.com/questions/19254411/how-do-i-set-vertical-space-between-list-items */
+li + li {
+  margin-top: 20px;
 }
+
 h1 {
   color: #7b90ac;
   text-align: center;

@@ -21,6 +21,23 @@
   color: #f3eced;
   padding: 30px;
 }
+.menulist {
+  list-style: none;
+  font-size: 25px;
+}
+.listmyworks {
+  list-style: none;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.menulist :hover {
+  font-weight: bold;
+}
+/*the next 3 lines are inspired by https://stackoverflow.com/questions/19254411/how-do-i-set-vertical-space-between-list-items */
+li + li {
+  margin-top: 20px;
+}
 a {
   color: #7b90ac;
 }
