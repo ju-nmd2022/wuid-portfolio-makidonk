@@ -47,6 +47,7 @@ header {
   text-align: center;
   grid-area: header;
   color: #f3eced;
+  padding-left: 300px;
 }
 .picture {
   margin-top: 10px;
