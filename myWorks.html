@@ -6,33 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Works</title>
     <link rel="stylesheet" type="text/css" href="myWorks.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen and (max-width:1250px)"
+      href="myWorksSmall.css"
+    />
   </head>
   <body>
     <div class="container">
       <header>My Works</header>
-      <div class="logo">
-        <h3>Logo</h3>
-        <img src="Logo.png" />
+
+      <div class="flexContainer">
+        <div class="flex_items logo">
+          <h3>Logo</h3>
+          <img src="Logo.png" />
+        </div>
+        <div class="flex_items stylization">
+          <a href="stylization.html">
+            <h3>Stylization</h3>
+            <img src="stylization.png" alt="Stylization of Pippi Langstrump" />
+          </a>
+        </div>
+        <div class="flex_items figma">
+          <h3>Music Player Prototype</h3>
+          <img src="figma.png" alt="Figma prototype" />
+        </div>
+        <div class="flex_items coffeTableBook">
+          <h3>Coffee Table Book</h3>
+          <img src="book.jpg" alt="picture of the coffee table book" />
+        </div>
+        <div class="flex_items animalDrawing">
+          <h3>Animal Drawing</h3>
+          <img src="animalPainting.jpg" alt="drawing of a dog" />
+        </div>
+        <div class="flex_items con6"></div>
       </div>
-      <div class="stylization">
-        <a href="stylization.html">
-          <h3>Stylization</h3>
-          <img src="stylization.png" alt="Stylization of Pippi Langstrump" />
-        </a>
-      </div>
-      <div class="figma">
-        <h3>Music Player Prototype</h3>
-        <img src="figma.png" alt="Figma prototype" />
-      </div>
-      <div class="coffeTableBook">
-        <h3>Coffee Table Book</h3>
-        <img src="book.jpg" alt="picture of the coffee table book" />
-      </div>
-      <div class="animalDrawing">
-        <h3>Animal Drawing</h3>
-        <img src="animalPainting.jpg" alt="drawing of a dog" />
-      </div>
+
       <div class="menu">
+        <input id="menu-toggle" type="checkbox" />
+        <label for="menu-toggle">
+          <img src="hamburgermenu.png" alt="hamburger menu" />
+        </label>
         <ul class="menulist">
           <li><a href="index.html">About me</a></li>
           <li><a href="jonkoping.html">Information about Jönköping</a></li>
