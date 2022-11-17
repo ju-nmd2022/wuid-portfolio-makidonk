@@ -46,7 +46,7 @@ header {
 li {
   list-style: none;
 }
-ul.info {
+#info {
   margin-top: 0px; /* what am i doing wrong?!!!!!!!!!!!!!!*/
 }
 /* The following 1 line (line 10) was copied from the lesson with Garret, and how to do this comment was searched from google.com */
