@@ -22,7 +22,7 @@
   background-color: #cfa5b1;
   grid-area: menu;
   color: #f3eced;
-  padding: 5%;
+  padding: 30px;
 }
 #menu-toggle {
   display: none;
