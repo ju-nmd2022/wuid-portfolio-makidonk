@@ -1,12 +1,96 @@
-* {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+.heroSection {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  align-items: end;
+  justify-content: left;
+  height: 480px;
+  margin-top: 0px;
+  padding: 0px;
+  font-size: 160px;
+  overflow: hidden;
+  background-color: #a5bfb8;
+}
+.text {
+  position: relative;
+  text-align: center;
+  font-size: 90px;
+  rotate: 90deg;
+  line-height: 70%;
+  color: #c698a5;
+  align-self: flex-end;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.animation {
+  animation-name: animatedHero;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transform-origin: bottom right;
+}
+
+@keyframes animatedHero {
+  0% {
+    transform: translateY(600px) scaleY(1.2) scaleX(0.96);
+  }
+  10% {
+    transform: translateY(-750px) scaleY(1.2) scaleX(0.96);
+  }
+  11% {
+    transform: translateY(-777px) scaleY(0.5) scaleX(1) rotate(0deg);
+  }
+  30% {
+    transform: translateY(-777px) scaleY(0.5) scaleX(1) rotate(0deg);
+  }
+  42% {
+    transform: translateY(-750px) scaleY(1) scaleX(0.8) rotate(-40deg);
+  }
+  49% {
+    transform: translateY(-750px) scaleY(1) scaleX(0.6) rotate(-90deg);
+  }
+
+  51% {
+    transform: translateY(-750px) translateX(-30px) scaleY(1) scaleX(0.6)
+      rotate(-95deg);
+  }
+  54% {
+    transform: translateY(-750px) translateX(0px) scaleY(1) scaleX(0.6)
+      rotate(-90deg);
+  }
+  78% {
+    transform: translateY(-750px) translateX(0px) scaleY(1) scaleX(0.6)
+      rotate(-90deg);
+  }
+  80% {
+    transform: translateY(-750px) translateX(0px) scaleY(1) scaleX(1)
+      rotate(-90deg);
+  }
+  83% {
+    transform: translateY(-750px) translateX(-40px) scaleY(1) scaleX(1)
+      rotate(-90deg);
+  }
+
+  88% {
+    transform: translateY(-750px) translateX(0px) scaleY(1) scaleX(0.9)
+      rotate(-90deg);
+  }
+  90% {
+    transform: translateY(-750px) translateX(0px) scaleY(1) scaleX(1)
+      rotate(-90deg);
+  }
+  100% {
+    transform: translateY(-750px) translateX(0px) scaleY(1) scaleX(1)
+      rotate(-90deg);
+  }
 }
 .container {
   display: grid;
+  height: 1vh;
   grid-template-columns: 300px 1fr 300px;
   grid-template-rows: 83px 1fr;
   grid-template-areas: "header header header" "menu con1 conside";
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 .con1 {
   grid-area: con1;
