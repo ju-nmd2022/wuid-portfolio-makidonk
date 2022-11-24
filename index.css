@@ -20,7 +20,69 @@
   align-self: flex-end;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+.ball {
+  position: relative;
+  top: 0px;
+  width: 100px;
+  height: 100px;
+  border-radius: 55px;
+  background-color: #c698a5;
+}
+.animation2 {
+  animation-name: ballHero;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transform-origin: bottom center;
+}
 
+@keyframes ballHero {
+  0% {
+    transform: translateY(-100vh);
+  }
+  20% {
+    transform: translateY(-100vh) scaleX(0.7) scaleY(1.3);
+  }
+  25% {
+    transform: translateY(0px) scaleX(0.7) scaleY(1.3);
+  }
+  26% {
+    transform: translateY(5px) scaleX(1.4) scaleY(0.1);
+  }
+  30% {
+    transform: translateY(-100px) scaleX(0.9) scaleY(1.1);
+  }
+  34% {
+    transform: translateY(5px) scaleX(1.1) scaleY(0.8);
+  }
+  37% {
+    transform: translateY(-70px) scaleX(1) scaleY(1);
+  }
+  41% {
+    transform: translateY(5px) scaleX(1) scaleY(0.8);
+  }
+  44% {
+    transform: translateY(-30px) scaleX(1) scaleY(1);
+  }
+  47% {
+    transform: translateY(5px) scaleX(1) scaleY(1);
+  }
+  50% {
+    transform: translateY(-10px) scaleX(1) scaleY(1);
+  }
+  53% {
+    transform: translateY(0px) scaleX(1) scaleY(1);
+  }
+  55% {
+    transform: translateY(-5px) scaleX(1) scaleY(1);
+  }
+  56% {
+    transform: translateY(0px) scaleX(1) scaleY(1);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 .animation {
   animation-name: animatedHero;
   animation-duration: 5s;
