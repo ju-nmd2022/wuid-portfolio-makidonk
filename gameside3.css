@@ -1,0 +1,16 @@
+body {
+  background-image: url("Freedom.png");
+  background-size: 1660px;
+  background-position: top;
+}
+.container {
+  position: absolute;
+  max-width: 500px;
+}
+
+h1 {
+  font-size: 60px;
+}
+h2 {
+  font-size: 20px;
+}

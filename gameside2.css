@@ -1,0 +1,133 @@
+body {
+  background-image: url("background\ \(1\).png");
+  background-size: 1650px;
+  background-position: bottom;
+}
+.firstMessage {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  position: absolute;
+  margin-left: 60vh;
+  margin-top: 10vh;
+  width: 500px;
+  height: 400px;
+  background-color: antiquewhite;
+  z-index: 100;
+  flex-wrap: wrap;
+}
+.gamecontainer {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 80vh 20vh;
+  grid-template-areas: "them you" "options options";
+  gap: 0px;
+  height: 100vh;
+}
+h1 {
+  padding: 15px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 32px;
+}
+p {
+  font-size: x-large;
+  padding: 15px;
+}
+.them {
+  grid-area: them;
+
+  margin-left: 50px;
+}
+.you {
+  grid-area: you;
+
+  margin-left: 50px;
+}
+.options {
+  grid-area: options;
+  bottom: 0px;
+
+  position: absolute;
+}
+#themrock {
+  display: none;
+  width: 600px;
+  margin-top: 15px;
+}
+#thempaper {
+  display: none;
+  width: 600px;
+  margin-top: 15px;
+}
+#themscissors {
+  display: none;
+  width: 600px;
+  margin-top: 15px;
+}
+#yourock {
+  display: none;
+  width: 600px;
+  margin-top: 15px;
+}
+#youpaper {
+  display: none;
+  width: 600px;
+  margin-top: 15px;
+}
+#youscissors {
+  display: none;
+  width: 600px;
+  margin-top: 15px;
+}
+button {
+  width: 300px;
+  height: 100px;
+  margin-left: 80px;
+}
+.pointHolder {
+  position: absolute;
+  display: flex;
+  margin-top: 0px;
+  column-gap: 60px;
+  margin-left: 500px;
+}
+h3 {
+  font-size: 60px;
+}
+#pointsThem {
+  background-color: blueviolet;
+  width: 70px;
+  height: 70px;
+  border-radius: 70px;
+  text-align: center;
+}
+#pointsYou {
+  background-color: aquamarine;
+  width: 70px;
+  height: 70px;
+  border-radius: 70px;
+  text-align: center;
+}
+
+.winner {
+  position: absolute;
+  display: flex;
+  margin-left: 500px;
+  margin-top: 50px;
+  width: 300px;
+  height: 100px;
+  background-color: antiquewhite;
+  z-index: 50;
+  display: none;
+}
+#winnerIsYou {
+  display: none;
+  padding-left: 40px;
+}
+#winnerIsThem {
+  display: none;
+  padding-left: 20px;
+  padding-top: 10px;
+}

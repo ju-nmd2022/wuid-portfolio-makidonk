@@ -1,0 +1,163 @@
+body {
+  background-image: url("background.png");
+  background-size: 1650px;
+  background-position: bottom;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr 4fr;
+  grid-template-rows: 4fr 10fr 4fr;
+  grid-template-areas: "convo . foundkey ." "hidekey codelock door cabinet" ". mat mat .";
+  height: 100vh;
+}
+#submission {
+  position: absolute;
+}
+
+.convo {
+  grid-area: convo;
+}
+
+.foundkey {
+  grid-area: foundkey;
+  background-color: blanchedalmond;
+}
+#foundkey {
+  position: absolute;
+  width: 200px;
+  margin-left: 300px;
+  margin-top: 0px;
+}
+.hidekey {
+  display: flex;
+  grid-area: hidekey;
+  width: 100px;
+  align-items: flex-end;
+  /*overflow: hidden; i want the key gone*/
+}
+
+#plant {
+  display: flex;
+  position: relative;
+  width: 200px;
+  margin-left: 120%;
+}
+
+#hidekey {
+  width: 100px;
+  display: none;
+}
+
+.codelock {
+  grid-area: codelock;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+#codelock {
+  background-color: antiquewhite;
+}
+
+.door {
+  grid-area: door;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+#door {
+  width: 450px;
+  overflow: hidden;
+}
+#openDoor {
+  width: 450px;
+  overflow: hidden;
+}
+
+.cabinet {
+  grid-area: cabinet;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+#cabinet {
+  width: 400px;
+}
+#openCabinet {
+  width: 400px;
+}
+
+.mat {
+  grid-area: mat;
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+}
+#mat {
+  width: 900px;
+  margin-bottom: 0;
+}
+
+#paperMat {
+  position: fixed;
+  width: 500px;
+  top: 10%;
+  left: 30%;
+}
+
+#paperCabinet {
+  position: fixed;
+  width: 500px;
+  top: 10%;
+  left: 30%;
+}
+
+.codelockselected {
+  position: fixed;
+  margin-left: 40vw;
+  margin-top: 20vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: hsl(0, 0%, 0%);
+  width: 299px;
+  height: 299px;
+  justify-items: center;
+  align-items: center;
+  padding: 10px;
+}
+.buttons {
+  width: 97px;
+  height: 97px;
+  display: inline-flex;
+}
+#code1 {
+  background-image: url("blue_half.png");
+}
+#code2 {
+  background-image: url("red_half.png");
+}
+#code3 {
+  background-image: url("pink.png");
+}
+#code4 {
+  background-image: url("orange.png");
+}
+#code5 {
+  background-image: url("blue.png");
+}
+#code6 {
+  background-image: url("green_half.png");
+}
+#code7 {
+  background-image: url("green.png");
+}
+#code8 {
+  background-image: url("pink_half.png");
+}
+#code9 {
+  background-image: url("red.png");
+}

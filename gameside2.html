@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="gameside2.css" />
+    <script src="gameside2.js" defer></script>
+  </head>
+  <body>
+    <!--en gubbe som kommer fram
+        gör sten sax påse:
+        quote som försvinner när man trycker kryss: "you ran into the kidnapper and he won't let you go
+        unless you win a round of rock paper scissors"
+        klikcar kryss:
+        vänster sida han, höger sida spelaren. 3 bilder var som blir random
+        button sten, sax, påse
+        if else x3 beroende på sina val
+        när man vunnit klicka på escape knapp
+        nästa sida-->
+    <div class="firstMessage">
+      <h1>
+        READ BEFORE CLICKING <br />"Oh no! You bumped straight into the
+        kidnapper and he won't let you go unless you win a game of rock paper
+        scissors! First to 3 wins"
+      </h1>
+      <p>If you loose - reload the website</p>
+    </div>
+    <div class="winner">
+      <h2 id="winnerIsThem">They won, let's try again.</h2>
+      <a href="gameside3.html"
+        ><h2 id="winnerIsYou">
+          You won! Now run!! <br />
+          *click on me to run*
+        </h2></a
+      >
+    </div>
+    <div class="pointHolder">
+      <h3 id="pointsThem">0</h3>
+      <h3 id="pointsYou">0</h3>
+    </div>
+    <div class="gamecontainer">
+      <div class="them">
+        <img src="rock_them.png" alt="rock them" id="themrock" />
+        <img src="paper_them.png" alt="paper them" id="thempaper" />
+        <img src="scissors_them.png" alt="scissors them" id="themscissors" />
+      </div>
+      <div class="you">
+        <img src="rock_you.png" alt="rock you" id="yourock" />
+        <img src="paper_you.png" alt="paper you" id="youpaper" />
+        <img src="scissors_you.png" alt="scissors you" id="youscissors" />
+      </div>
+    </div>
+
+    <div class="options">
+      <button id="rockButton"><h2>Rock</h2></button>
+      <button id="paperButton"><h2>Paper</h2></button>
+      <button id="scissorsButton"><h2>Scissors</h2></button>
+    </div>
+  </body>
+</html>

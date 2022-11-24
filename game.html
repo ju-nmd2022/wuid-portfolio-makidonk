@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escape House</title>
+    <link rel="stylesheet" type="text/css" href="game.css" />
+    <script src="game.js" defer></script>
+  </head>
+  <body>
+    <!--the following 5 lines were inspired by https://stackoverflow.com/questions/35329180/localstorage-save-name-through-form-show-on-other-page-->
+    <form onsubmit="callName()" id="submission">
+      <p>Enter your name</p>
+      <input id="name" type="text" />
+      <button type="submit" value="submit" id="submitbutton">Submit</button>
+    </form>
+    <img src="paper_mat.png" alt="paper under the mat" id="paperMat" />
+    <img
+      src="paper_cabinet.png"
+      alt="paper inside the cabinet"
+      id="paperCabinet"
+    />
+    <div class="codelockselected">
+      <div id="code1" class="buttons"></div>
+      <div id="code2" class="buttons"></div>
+      <div id="code3" class="buttons" class="buttonsWrong"></div>
+      <div id="code4" class="buttons" class="buttonsWrong"></div>
+      <div id="code5" class="buttons"></div>
+      <div id="code6" class="buttons" class="buttonsWrong"></div>
+      <div id="code7" class="buttons"></div>
+      <div id="code8" class="buttons" class="buttonsWrong"></div>
+      <div id="code9" class="buttons" class="buttonsWrong"></div>
+    </div>
+    <div class="container">
+      <div class="convo">
+        <p id="conversation"></p>
+      </div>
+      <img src="key.png" alt="key that is found" id="foundkey" />
+      <div class="hidekey">
+        <img src="plant.png" alt="plant" id="plant" />
+        <img src="key.png" alt="key hidden" id="hidekey" />
+      </div>
+      <div class="codelock">
+        <img src="codelock.png" alt="codelock" id="codelock" />
+      </div>
+      <div class="door">
+        <img src="door.png" alt="door closed" id="door" />
+        <a href="gameside2.html"
+          ><img src="door_open.png" alt="door open" id="openDoor"
+        /></a>
+      </div>
+      <div class="cabinet">
+        <img src="cabinet.png" alt="cabinet closed" id="cabinet" />
+        <img src="cabinet_open.png" alt="cabinet open" id="openCabinet" />
+      </div>
+      <div class="mat">
+        <img src="mat.png" alt="mat with paper under" id="mat" />
+      </div>
+    </div>
+  </body>
+</html>
