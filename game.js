@@ -174,16 +174,3 @@ function callName() {
   let name = document.querySelector("#name").value;
   localStorage.setItem("playerName", name);
 }
-
-/*
-function getName() {
-  if (gameside == 3) {
-    document.querySelector("#finished").innerText =
-      "Good job, " + localStorage.getItem("playerName") + "!";
-  }
-}
-
-window.onload = function () {
-  getName();
-};
-*/
