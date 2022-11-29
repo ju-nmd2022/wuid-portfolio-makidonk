@@ -13,6 +13,9 @@ body {
 }
 #submission {
   position: absolute;
+  top: 30px;
+  left: 70px;
+  font-size: 20px;
 }
 
 .convo {

@@ -10,7 +10,7 @@
   </head>
   <body>
     <!--the following 5 lines were inspired by https://stackoverflow.com/questions/35329180/localstorage-save-name-through-form-show-on-other-page-->
-    <form onsubmit="callName()" id="submission">
+    <form onsubmit="callName();return false" id="submission">
       <p>Enter your name</p>
       <input id="name" type="text" />
       <button type="submit" value="submit" id="submitbutton">Submit</button>

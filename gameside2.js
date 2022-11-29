@@ -33,9 +33,6 @@ function getRandomNumber() {
     themScissors.style.display = "block";
   }
 }
-/*let theWinnerIs = "You won! Now run!!";
-let theWinnerIsThem = "They won, let's try again.";
-winner.innerText = theWinnerIs;*/
 
 /*points. the valueYouThem will change the inline text in pointsThem/you to the value of valueThemYou.  */
 let valueYou = 0;
